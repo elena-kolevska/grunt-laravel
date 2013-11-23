@@ -1,0 +1,29 @@
+{
+  "name": "gruntRocks",
+  "version": "0.0.0",
+  "description": "Usando Grunt com Laravel e Bootstrap",
+  "main": "Gruntfile.js",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/elena-kolevska/grunt-laravel.git"
+  },
+  "keywords": [
+    "Laravel",
+    "Grunt",
+    "Bootstrap",
+    "laravel.com.br"
+  ],
+  "author": "Elena Kolevska",
+  "license": "BSD",
+  "bugs": {
+    "url": "https://github.com/elena-kolevska/grunt-laravel/issues"
+  },
+  "devDependencies": {
+    "grunt": "~0.4.2",
+    "grunt-contrib-concat": "~0.3.0",
+    "grunt-contrib-less": "~0.8.2",
+    "grunt-contrib-uglify": "~0.2.7",
+    "grunt-contrib-watch": "~0.5.3",
+    "grunt-phpunit": "~0.3.1"
+  }
+}
