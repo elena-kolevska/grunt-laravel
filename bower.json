@@ -1,0 +1,6 @@
+{
+  "name": "gruntRocks",
+  "dependencies": {
+    "bootstrap": "~3.0.3"
+  }
+}
