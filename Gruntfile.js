@@ -4,6 +4,16 @@ module.exports = function(grunt) {
     grunt.initConfig({
 
       // Task configuration
+    copy: {  
+      main: {
+        expand: true,
+        cwd: 'bower_components/bootstrap/fonts/',
+        src: '**',
+        dest: 'public/assets/fonts/',
+        flatten: true,
+        filter: 'isFile',
+      },
+    },      
     less: {
         development: {
             options: {
@@ -104,8 +114,10 @@ module.exports = function(grunt) {
   grunt.loadNpmTasks('grunt-contrib-less');
   grunt.loadNpmTasks('grunt-contrib-uglify');
   grunt.loadNpmTasks('grunt-phpunit');
+  grunt.loadNpmTasks('grunt-contrib-copy');
 
   // Task definition
+  grunt.registerTask('init', ['copy', 'less', 'concat', 'uglify']);
   grunt.registerTask('default', ['watch']);
 
 };
