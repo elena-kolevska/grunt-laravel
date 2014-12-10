@@ -104,6 +104,12 @@ module.exports = function(grunt) {
         tests: {
           files: ['app/controllers/*.php','app/models/*.php'],  //the task will run only when you save files in this location
           tasks: ['phpunit']
+        },
+        views: {
+          files: ['app/views/**/*.blade.php'], //Reload the browser automatically whenever a Laravel Blade template file is updated.
+          options: {
+            livereload: true
+          }
         }
       }
     });
